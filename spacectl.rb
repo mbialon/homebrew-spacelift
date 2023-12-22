@@ -5,13 +5,13 @@
 class Spacectl < Formula
   desc "Spacelift client and CLI"
   homepage "https://github.com/spacelift-io/spacectl"
-  version "0.0.202"
+  version "0.0.203"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/mbialon/spacectl/releases/download/v0.0.202/spacectl_0.0.202_darwin_arm64.zip"
-      sha256 "80cf4fdc1d35bb07da4c599ff97c835993a6ba50e4bcfcffb18e6430ce87730e"
+      url "https://github.com/mbialon/spacectl/releases/download/v0.0.203/spacectl_0.0.203_darwin_arm64.zip"
+      sha256 "f16e4265d4090fc9386c34c4a07c07111db18fa716c70880fda7ada2a9479191"
 
       def install
         bin.install "spacectl"
@@ -21,8 +21,8 @@ class Spacectl < Formula
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/mbialon/spacectl/releases/download/v0.0.202/spacectl_0.0.202_darwin_amd64.zip"
-      sha256 "a31b7bb5b7490e07b60fac61ee6e25d323243e564139cf499c7453769cea746f"
+      url "https://github.com/mbialon/spacectl/releases/download/v0.0.203/spacectl_0.0.203_darwin_amd64.zip"
+      sha256 "bf8746e8d8abb1138659ce85039ab8e2442006903093b626f6794ba9f9ce8afd"
 
       def install
         bin.install "spacectl"
@@ -35,8 +35,8 @@ class Spacectl < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/mbialon/spacectl/releases/download/v0.0.202/spacectl_0.0.202_linux_arm64.zip"
-      sha256 "3fe0a29eb5d1367f6c766e35607ffd78661f7f8200bad79a70da1df97c31b768"
+      url "https://github.com/mbialon/spacectl/releases/download/v0.0.203/spacectl_0.0.203_linux_arm64.zip"
+      sha256 "eb90155cf8b8a60299e5bb9863f7ce642a2f8b341c586507a82055f03c1e16fa"
 
       def install
         bin.install "spacectl"
@@ -46,8 +46,8 @@ class Spacectl < Formula
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/mbialon/spacectl/releases/download/v0.0.202/spacectl_0.0.202_linux_amd64.zip"
-      sha256 "1803142b8c23ae746fb2e62108b0872141c3dc09da6f2ecf8166bb930c3f3338"
+      url "https://github.com/mbialon/spacectl/releases/download/v0.0.203/spacectl_0.0.203_linux_amd64.zip"
+      sha256 "89458ff2b9580005b660b4cbc9306fdbbb39325eef6e6b14365a920d8d0a6246"
 
       def install
         bin.install "spacectl"
